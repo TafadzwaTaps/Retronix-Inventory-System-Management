@@ -312,7 +312,7 @@
             // 
             this.CustomerDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.CustomerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CustomerDataGridView.Location = new System.Drawing.Point(735, 70);
+            this.CustomerDataGridView.Location = new System.Drawing.Point(747, 70);
             this.CustomerDataGridView.Name = "CustomerDataGridView";
             this.CustomerDataGridView.RowHeadersWidth = 51;
             this.CustomerDataGridView.RowTemplate.Height = 24;
