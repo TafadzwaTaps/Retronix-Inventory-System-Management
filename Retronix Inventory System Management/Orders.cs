@@ -199,6 +199,11 @@ namespace Retronix_Inventory_System_Management
             }
         }
 
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void AddToOrderButton_Click(object sender, EventArgs e)
         {
             if (QtyTb.Text == "")

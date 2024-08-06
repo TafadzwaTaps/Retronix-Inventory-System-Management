@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 
 namespace Retronix_Inventory_System_Management

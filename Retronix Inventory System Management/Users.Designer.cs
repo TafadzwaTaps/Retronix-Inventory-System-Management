@@ -68,7 +68,7 @@
             // UserIdTextBox
             // 
             this.UserIdTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserIdTextBox.Location = new System.Drawing.Point(22, 66);
+            this.UserIdTextBox.Location = new System.Drawing.Point(144, 66);
             this.UserIdTextBox.Multiline = true;
             this.UserIdTextBox.Name = "UserIdTextBox";
             this.UserIdTextBox.Size = new System.Drawing.Size(426, 42);
@@ -77,7 +77,7 @@
             // PhoneNumberTextBox
             // 
             this.PhoneNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumberTextBox.Location = new System.Drawing.Point(22, 418);
+            this.PhoneNumberTextBox.Location = new System.Drawing.Point(144, 418);
             this.PhoneNumberTextBox.Multiline = true;
             this.PhoneNumberTextBox.Name = "PhoneNumberTextBox";
             this.PhoneNumberTextBox.Size = new System.Drawing.Size(426, 40);
@@ -86,7 +86,7 @@
             // PasswordTextBox
             // 
             this.PasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTextBox.Location = new System.Drawing.Point(22, 327);
+            this.PasswordTextBox.Location = new System.Drawing.Point(144, 327);
             this.PasswordTextBox.Multiline = true;
             this.PasswordTextBox.Name = "PasswordTextBox";
             this.PasswordTextBox.Size = new System.Drawing.Size(426, 42);
@@ -95,7 +95,7 @@
             // UserTextBox
             // 
             this.UserTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserTextBox.Location = new System.Drawing.Point(22, 242);
+            this.UserTextBox.Location = new System.Drawing.Point(144, 242);
             this.UserTextBox.Multiline = true;
             this.UserTextBox.Name = "UserTextBox";
             this.UserTextBox.Size = new System.Drawing.Size(426, 39);
@@ -273,7 +273,7 @@
             this.panel1.Controls.Add(this.PasswordTextBox);
             this.panel1.Controls.Add(this.UserTextBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(175, 76);
+            this.panel1.Location = new System.Drawing.Point(36, 76);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1329, 783);
             this.panel1.TabIndex = 70;
@@ -284,7 +284,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(24, 123);
+            this.label2.Location = new System.Drawing.Point(146, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 22);
             this.label2.TabIndex = 102;
@@ -293,7 +293,7 @@
             // FullNameTextbox
             // 
             this.FullNameTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FullNameTextbox.Location = new System.Drawing.Point(22, 155);
+            this.FullNameTextbox.Location = new System.Drawing.Point(144, 155);
             this.FullNameTextbox.Multiline = true;
             this.FullNameTextbox.Name = "FullNameTextbox";
             this.FullNameTextbox.Size = new System.Drawing.Size(426, 41);
@@ -305,7 +305,7 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(24, 546);
+            this.label8.Location = new System.Drawing.Point(146, 546);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(142, 22);
             this.label8.TabIndex = 100;
@@ -314,7 +314,7 @@
             // SearchTextBox
             // 
             this.SearchTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SearchTextBox.Location = new System.Drawing.Point(22, 581);
+            this.SearchTextBox.Location = new System.Drawing.Point(144, 581);
             this.SearchTextBox.Multiline = true;
             this.SearchTextBox.Name = "SearchTextBox";
             this.SearchTextBox.Size = new System.Drawing.Size(426, 41);
@@ -324,11 +324,11 @@
             // 
             this.UserDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.UserDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UserDataGridView.Location = new System.Drawing.Point(479, 66);
+            this.UserDataGridView.Location = new System.Drawing.Point(614, 66);
             this.UserDataGridView.Name = "UserDataGridView";
             this.UserDataGridView.RowHeadersWidth = 51;
             this.UserDataGridView.RowTemplate.Height = 24;
-            this.UserDataGridView.Size = new System.Drawing.Size(838, 701);
+            this.UserDataGridView.Size = new System.Drawing.Size(703, 701);
             this.UserDataGridView.TabIndex = 98;
             this.UserDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UserDataGridView_CellContentClick);
             // 
@@ -339,7 +339,7 @@
             this.RoleComboBox.Items.AddRange(new object[] {
             "Admin",
             "User"});
-            this.RoleComboBox.Location = new System.Drawing.Point(22, 489);
+            this.RoleComboBox.Location = new System.Drawing.Point(144, 489);
             this.RoleComboBox.Name = "RoleComboBox";
             this.RoleComboBox.Size = new System.Drawing.Size(426, 37);
             this.RoleComboBox.TabIndex = 95;
@@ -350,7 +350,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(24, 464);
+            this.label7.Location = new System.Drawing.Point(146, 464);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 22);
             this.label7.TabIndex = 94;
@@ -374,7 +374,7 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label5.Location = new System.Drawing.Point(24, 32);
+            this.label5.Location = new System.Drawing.Point(146, 32);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 22);
             this.label5.TabIndex = 91;
@@ -386,7 +386,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(24, 383);
+            this.label4.Location = new System.Drawing.Point(146, 383);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 22);
             this.label4.TabIndex = 90;
@@ -398,7 +398,7 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(24, 302);
+            this.label3.Location = new System.Drawing.Point(146, 302);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(89, 22);
             this.label3.TabIndex = 89;
@@ -410,7 +410,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(24, 207);
+            this.label1.Location = new System.Drawing.Point(146, 207);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(92, 22);
             this.label1.TabIndex = 88;
@@ -425,7 +425,7 @@
             this.SearchButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.SearchButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.SearchButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.SearchButton.Location = new System.Drawing.Point(244, 722);
+            this.SearchButton.Location = new System.Drawing.Point(366, 722);
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(204, 45);
             this.SearchButton.TabIndex = 77;
@@ -442,7 +442,7 @@
             this.DeleteButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.DeleteButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.DeleteButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.DeleteButton.Location = new System.Drawing.Point(22, 722);
+            this.DeleteButton.Location = new System.Drawing.Point(144, 722);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(193, 45);
             this.DeleteButton.TabIndex = 76;
@@ -459,7 +459,7 @@
             this.EditButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.EditButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.EditButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.EditButton.Location = new System.Drawing.Point(244, 648);
+            this.EditButton.Location = new System.Drawing.Point(366, 648);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(204, 45);
             this.EditButton.TabIndex = 75;
@@ -476,7 +476,7 @@
             this.Addbutton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.Addbutton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Addbutton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Addbutton.Location = new System.Drawing.Point(22, 648);
+            this.Addbutton.Location = new System.Drawing.Point(144, 648);
             this.Addbutton.Name = "Addbutton";
             this.Addbutton.Size = new System.Drawing.Size(193, 45);
             this.Addbutton.TabIndex = 74;
@@ -493,16 +493,16 @@
             this.title.Location = new System.Drawing.Point(0, 0);
             this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(1504, 76);
+            this.title.Size = new System.Drawing.Size(1365, 76);
             this.title.TabIndex = 69;
             this.title.Text = "Retronix Inventory Management System";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Users
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1504, 859);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1365, 859);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.title);

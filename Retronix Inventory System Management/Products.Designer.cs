@@ -86,7 +86,7 @@
             this.title.Location = new System.Drawing.Point(0, 0);
             this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(1507, 60);
+            this.title.Size = new System.Drawing.Size(1507, 83);
             this.title.TabIndex = 66;
             this.title.Text = "Retronix Inventory Management System";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,9 +96,9 @@
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(187, 60);
+            this.panel1.Location = new System.Drawing.Point(187, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1320, 825);
+            this.panel1.Size = new System.Drawing.Size(1320, 802);
             this.panel1.TabIndex = 67;
             // 
             // groupBox2
@@ -504,9 +504,9 @@
             this.panel2.Controls.Add(this.UserIconButton);
             this.panel2.Controls.Add(this.HomeIconButton);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 60);
+            this.panel2.Location = new System.Drawing.Point(0, 83);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(171, 825);
+            this.panel2.Size = new System.Drawing.Size(171, 802);
             this.panel2.TabIndex = 68;
             // 
             // LogoutIconButton
@@ -641,8 +641,8 @@
             // 
             // Products
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(1507, 885);
             this.Controls.Add(this.panel2);

@@ -35,10 +35,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::Retronix_Inventory_System_Management.Properties.Resources.welcome_neon_glow_dark_background_glowing_1920x1080_2068;
-            this.pictureBox1.Location = new System.Drawing.Point(0, -4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1249, 780);
+            this.pictureBox1.Size = new System.Drawing.Size(1248, 771);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -59,8 +60,8 @@
             // 
             // Welcome_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1248, 771);
             this.Controls.Add(this.ProceedButton);
             this.Controls.Add(this.pictureBox1);

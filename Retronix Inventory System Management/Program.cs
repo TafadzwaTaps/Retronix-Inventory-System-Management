@@ -13,7 +13,7 @@ namespace Retronix_Inventory_System_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Products());
+            Application.Run(new Welcome_Form());
         }
     }
 }
