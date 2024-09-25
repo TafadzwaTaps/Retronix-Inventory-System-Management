@@ -69,12 +69,16 @@
             this.CustomerIconButton = new FontAwesome.Sharp.IconButton();
             this.UserIconButton = new FontAwesome.Sharp.IconButton();
             this.HomeIconButton = new FontAwesome.Sharp.IconButton();
+            this.ScanBtn = new FontAwesome.Sharp.IconButton();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // title
@@ -86,7 +90,7 @@
             this.title.Location = new System.Drawing.Point(0, 0);
             this.title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(1507, 83);
+            this.title.Size = new System.Drawing.Size(1540, 83);
             this.title.TabIndex = 66;
             this.title.Text = "Retronix Inventory Management System";
             this.title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,13 +100,14 @@
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(187, 83);
+            this.panel1.Location = new System.Drawing.Point(177, 83);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1320, 802);
+            this.panel1.Size = new System.Drawing.Size(1363, 802);
             this.panel1.TabIndex = 67;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.ScanBtn);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
@@ -185,12 +190,13 @@
             this.RefreshButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.RefreshButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.RefreshButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.RefreshButton.Location = new System.Drawing.Point(271, 402);
+            this.RefreshButton.Location = new System.Drawing.Point(310, 402);
             this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(172, 45);
+            this.RefreshButton.Size = new System.Drawing.Size(133, 45);
             this.RefreshButton.TabIndex = 96;
             this.RefreshButton.Text = "Refresh";
             this.RefreshButton.UseVisualStyleBackColor = false;
+            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
             // SearchButton
             // 
@@ -203,7 +209,7 @@
             this.SearchButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.SearchButton.Location = new System.Drawing.Point(3, 403);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(175, 45);
+            this.SearchButton.Size = new System.Drawing.Size(130, 45);
             this.SearchButton.TabIndex = 95;
             this.SearchButton.Text = "Search";
             this.SearchButton.UseVisualStyleBackColor = false;
@@ -263,16 +269,18 @@
             // 
             this.ProductsDataGridView.BackgroundColor = System.Drawing.Color.White;
             this.ProductsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.ProductsDataGridView.Location = new System.Drawing.Point(470, 103);
+            this.ProductsDataGridView.Location = new System.Drawing.Point(489, 72);
             this.ProductsDataGridView.Name = "ProductsDataGridView";
             this.ProductsDataGridView.RowHeadersWidth = 51;
             this.ProductsDataGridView.RowTemplate.Height = 24;
-            this.ProductsDataGridView.Size = new System.Drawing.Size(729, 345);
+            this.ProductsDataGridView.Size = new System.Drawing.Size(684, 376);
             this.ProductsDataGridView.TabIndex = 90;
             this.ProductsDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ProductsDataGridView_CellContentClick);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.SupplierID);
             this.groupBox1.Controls.Add(this.SupplierTextBox);
             this.groupBox1.Controls.Add(this.label7);
@@ -293,7 +301,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(14, 5);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1220, 328);
+            this.groupBox1.Size = new System.Drawing.Size(1337, 328);
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
             // 
@@ -315,7 +323,7 @@
             this.SupplierTextBox.Location = new System.Drawing.Point(6, 253);
             this.SupplierTextBox.Multiline = true;
             this.SupplierTextBox.Name = "SupplierTextBox";
-            this.SupplierTextBox.Size = new System.Drawing.Size(402, 50);
+            this.SupplierTextBox.Size = new System.Drawing.Size(356, 50);
             this.SupplierTextBox.TabIndex = 97;
             // 
             // label7
@@ -324,7 +332,7 @@
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(463, 221);
+            this.label7.Location = new System.Drawing.Point(427, 221);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(55, 22);
             this.label7.TabIndex = 93;
@@ -336,7 +344,7 @@
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(463, 124);
+            this.label8.Location = new System.Drawing.Point(427, 124);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 22);
             this.label8.TabIndex = 92;
@@ -351,7 +359,7 @@
             this.NextButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.NextButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.NextButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.NextButton.Location = new System.Drawing.Point(1027, 242);
+            this.NextButton.Location = new System.Drawing.Point(1149, 250);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(172, 51);
             this.NextButton.TabIndex = 77;
@@ -368,7 +376,7 @@
             this.DeleteButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.DeleteButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.DeleteButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.DeleteButton.Location = new System.Drawing.Point(1027, 169);
+            this.DeleteButton.Location = new System.Drawing.Point(1149, 177);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(172, 52);
             this.DeleteButton.TabIndex = 76;
@@ -379,10 +387,10 @@
             // StockTextbox
             // 
             this.StockTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StockTextbox.Location = new System.Drawing.Point(464, 253);
+            this.StockTextbox.Location = new System.Drawing.Point(428, 253);
             this.StockTextbox.Multiline = true;
             this.StockTextbox.Name = "StockTextbox";
-            this.StockTextbox.Size = new System.Drawing.Size(414, 50);
+            this.StockTextbox.Size = new System.Drawing.Size(369, 50);
             this.StockTextbox.TabIndex = 90;
             // 
             // EditButton
@@ -394,7 +402,7 @@
             this.EditButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.EditButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.EditButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.EditButton.Location = new System.Drawing.Point(1027, 93);
+            this.EditButton.Location = new System.Drawing.Point(1149, 101);
             this.EditButton.Name = "EditButton";
             this.EditButton.Size = new System.Drawing.Size(175, 56);
             this.EditButton.TabIndex = 75;
@@ -405,10 +413,10 @@
             // PackageTextbox
             // 
             this.PackageTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PackageTextbox.Location = new System.Drawing.Point(464, 163);
+            this.PackageTextbox.Location = new System.Drawing.Point(428, 163);
             this.PackageTextbox.Multiline = true;
             this.PackageTextbox.Name = "PackageTextbox";
-            this.PackageTextbox.Size = new System.Drawing.Size(414, 50);
+            this.PackageTextbox.Size = new System.Drawing.Size(369, 50);
             this.PackageTextbox.TabIndex = 89;
             // 
             // AddButton
@@ -420,7 +428,7 @@
             this.AddButton.IconChar = FontAwesome.Sharp.IconChar.None;
             this.AddButton.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.AddButton.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.AddButton.Location = new System.Drawing.Point(1027, 21);
+            this.AddButton.Location = new System.Drawing.Point(1149, 29);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(172, 55);
             this.AddButton.TabIndex = 74;
@@ -434,7 +442,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(463, 18);
+            this.label4.Location = new System.Drawing.Point(427, 18);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 22);
             this.label4.TabIndex = 88;
@@ -467,10 +475,10 @@
             // UnitPriceTextbox
             // 
             this.UnitPriceTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UnitPriceTextbox.Location = new System.Drawing.Point(464, 60);
+            this.UnitPriceTextbox.Location = new System.Drawing.Point(428, 60);
             this.UnitPriceTextbox.Multiline = true;
             this.UnitPriceTextbox.Name = "UnitPriceTextbox";
-            this.UnitPriceTextbox.Size = new System.Drawing.Size(414, 50);
+            this.UnitPriceTextbox.Size = new System.Drawing.Size(369, 50);
             this.UnitPriceTextbox.TabIndex = 85;
             // 
             // ProductIDTextbox
@@ -479,7 +487,7 @@
             this.ProductIDTextbox.Location = new System.Drawing.Point(6, 60);
             this.ProductIDTextbox.Multiline = true;
             this.ProductIDTextbox.Name = "ProductIDTextbox";
-            this.ProductIDTextbox.Size = new System.Drawing.Size(402, 50);
+            this.ProductIDTextbox.Size = new System.Drawing.Size(356, 50);
             this.ProductIDTextbox.TabIndex = 84;
             // 
             // ProductTextbox
@@ -488,7 +496,7 @@
             this.ProductTextbox.Location = new System.Drawing.Point(6, 163);
             this.ProductTextbox.Multiline = true;
             this.ProductTextbox.Name = "ProductTextbox";
-            this.ProductTextbox.Size = new System.Drawing.Size(402, 50);
+            this.ProductTextbox.Size = new System.Drawing.Size(356, 50);
             this.ProductTextbox.TabIndex = 83;
             // 
             // panel2
@@ -639,12 +647,50 @@
             this.HomeIconButton.UseVisualStyleBackColor = false;
             this.HomeIconButton.Click += new System.EventHandler(this.HomeIconButton_Click);
             // 
+            // ScanBtn
+            // 
+            this.ScanBtn.BackColor = System.Drawing.Color.White;
+            this.ScanBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ScanBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScanBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ScanBtn.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.ScanBtn.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.ScanBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.ScanBtn.Location = new System.Drawing.Point(159, 402);
+            this.ScanBtn.Name = "ScanBtn";
+            this.ScanBtn.Size = new System.Drawing.Size(130, 45);
+            this.ScanBtn.TabIndex = 100;
+            this.ScanBtn.Text = "Scan";
+            this.ScanBtn.UseVisualStyleBackColor = false;
+            this.ScanBtn.Click += new System.EventHandler(this.ScanBtn_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Location = new System.Drawing.Point(839, 60);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(271, 243);
+            this.pictureBox2.TabIndex = 99;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label11.Location = new System.Drawing.Point(900, 18);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(145, 22);
+            this.label11.TabIndex = 100;
+            this.label11.Text = "Barcode/QrCode";
+            // 
             // Products
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(1507, 885);
+            this.ClientSize = new System.Drawing.Size(1540, 885);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.title);
@@ -661,6 +707,7 @@
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -708,5 +755,8 @@
         private System.Windows.Forms.DataGridView ProductsDataGridView;
         private System.Windows.Forms.Label SupplierID;
         private System.Windows.Forms.TextBox SupplierTextBox;
+        private FontAwesome.Sharp.IconButton ScanBtn;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -46,22 +46,22 @@ namespace Retronix_Inventory_System_Management.Models
                     command.Connection = connection;
                     //Get Total Number of Customers
                     command.CommandText = "select count(CustomerID) from Customer";
-                    NumCustomers = (int)command.ExecuteScalar();
+                    NumCustomers = (int)command.ExecuteScalar() * 10;
 
                     //Get Total Number of Suppliers
                     command.CommandText = "select count(SupplierId) from Supplier";
-                    NumSuppliers = (int)command.ExecuteScalar();
+                    NumSuppliers = (int)command.ExecuteScalar() * 10;
 
                     //Get Total Number of Products
                     command.CommandText = "select count(ProductId) from Product";
-                    NumProducts = (int)command.ExecuteScalar();
+                    NumProducts = (int)command.ExecuteScalar() * 10;
 
                     //Get Total Number of Orders
                     command.CommandText = @"select count(OrderId) from [OrderTbl]" +
                                             "where OrderDate between  @fromDate and @toDate";
                     command.Parameters.Add("@fromDate", System.Data.SqlDbType.DateTime).Value = startDate;
                     command.Parameters.Add("@toDate", System.Data.SqlDbType.DateTime).Value = endDate;
-                    NumOrders = (int)command.ExecuteScalar();
+                    NumOrders = (int)command.ExecuteScalar() * 1000;
                 }
             }
         }
